@@ -8,6 +8,6 @@
     <string name="checkbox4">CheckBox 4</string>
     <string name="radio1">Radio 1</string>
     <string name="radio2">Radio 2</string>
-    <string name="img1">Pen drawing of a person.</string>
     <string name="avatar">avatar</string>
+    <string name="FaceDrawing">Pen drawing of a man.</string>
 </resources>
