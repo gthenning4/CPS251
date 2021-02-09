@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StateChange</string>
+    <string name="app_name">LayoutProject</string>
     <string name="button">Button 1</string>
     <string name="button2">Button 2</string>
     <string name="checkbox1">CheckBox 1</string>
@@ -9,4 +9,5 @@
     <string name="radio1">Radio 1</string>
     <string name="radio2">Radio 2</string>
     <string name="img1">Pen drawing of a person.</string>
+    <string name="avatar">avatar</string>
 </resources>

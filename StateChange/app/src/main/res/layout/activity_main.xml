@@ -11,7 +11,7 @@
         android:layout_width="306dp"
         android:layout_height="107dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,27 +73,28 @@
         android:layout_width="331dp"
         android:layout_height="56dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center|bottom"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button1"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginEnd="20dp"
             android:layout_weight="2"
             android:text="@string/button" />
 
         <Button
             android:id="@+id/button2"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -102,17 +103,13 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="258dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="1dp"
-        android:contentDescription="@string/img1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="319dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/googlyeyez2" />
+        app:srcCompat="@drawable/face_crop" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
