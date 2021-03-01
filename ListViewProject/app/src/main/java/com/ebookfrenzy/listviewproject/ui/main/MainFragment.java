@@ -49,7 +49,7 @@ public class MainFragment extends Fragment {
         myList = getView().findViewById(R.id.myList);
 
 
-        msg.setText(mViewModel.getMyText());        //Set message with view model
+        msg.setText(mViewModel.getMyText());        //Restore message with view model
         msg.setTextColor(Color.parseColor("#FF0000"));         //set message color to red
 
         //Make a new adapter to handle array data from view model
@@ -71,7 +71,7 @@ public class MainFragment extends Fragment {
                     msg.setText(mViewModel.getMyText());
                 }
                 else{
-                    mViewModel.setMyText("You must enter a name.");
+                    mViewModel.setMyText("You must enter a name."); //set message in view model then UI
                     msg.setText(mViewModel.getMyText());
                 }
             }
