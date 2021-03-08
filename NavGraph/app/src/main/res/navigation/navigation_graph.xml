@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ebookfrenzy.navgraph.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragA"
+            app:destination="@id/fragA" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragB"
+            app:destination="@id/fragB" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragC"
+            app:destination="@id/fragC" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragA"
+        android:name="com.ebookfrenzy.navgraph.ui.main.FragA"
+        android:label="fragment_frag_a"
+        tools:layout="@layout/fragment_frag_a">
+        <argument
+            android:name="message"
+            app:argType="string"
+            android:defaultValue="no message set" />
+        <argument
+            android:name="img"
+            app:argType="integer"
+            android:defaultValue="0"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/fragB"
+        android:name="com.ebookfrenzy.navgraph.ui.main.FragB"
+        android:label="fragment_frag_b"
+        tools:layout="@layout/fragment_frag_b" />
+    <fragment
+        android:id="@+id/fragC"
+        android:name="com.ebookfrenzy.navgraph.ui.main.FragC"
+        android:label="fragment_frag_c"
+        tools:layout="@layout/fragment_frag_c" />
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.ebookfrenzy.navgraphproject.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_MainFragment_to_FragmentA"
+            app:destination="@id/FragmentA" />
+        <action
+            android:id="@+id/action_MainFragment_to_FragmentC"
+            app:destination="@id/FragmentC" />
+        <action
+            android:id="@+id/action_MainFragment_to_FragmentB"
+            app:destination="@id/FragmentB" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentA"
+        android:name="com.ebookfrenzy.navgraphproject.FragmentA"
+        android:label="@string/fragment_a_label"
+        tools:layout="@layout/fragment_a"/>
+    <fragment
+        android:id="@+id/FragmentB"
+        android:name="com.ebookfrenzy.navgraphproject.FragmentB"
+        android:label="@string/fragment_b_label"
+        tools:layout="@layout/fragment_b"/>
+    <fragment
+        android:id="@+id/FragmentC"
+        android:name="com.ebookfrenzy.navgraphproject.FragmentC"
+        android:label="@string/fragment_c_label"
+        tools:layout="@layout/fragment_c"/>
+</navigation>
