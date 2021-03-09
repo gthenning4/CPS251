@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.ebookfrenzy.navgraph.R;
 
@@ -62,5 +64,14 @@ public class FragB extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_frag_b, container, false);
+    }
+    @Override public void onStart(){
+        super.onStart();
+        FragAArgs args= FragAArgs.fromBundle(getArguments());
+
+
+        ImageView imageB = getView().findViewById(R.id.imageViewB);
+        imageB.setImageResource(args.getImg());
+
     }
 }

@@ -22,6 +22,10 @@ public class MainFragment extends Fragment {
 
     private MainViewModel mViewModel;
 
+    public int getDrawableId(ImageView iv){
+        return (Integer) iv.getTag();
+    }
+
     public static MainFragment newInstance() {
         return new MainFragment();
     }
@@ -40,14 +44,19 @@ public class MainFragment extends Fragment {
         // TODO: Use the ViewModel
 
         Button btn = getView().findViewById(R.id.btnToFragA);
-        ImageView img = getView().findViewById(R.id.starImg);
+        ImageView imgA = getView().findViewById(R.id.imgA);
+        imgA.setTag(R.drawable.um1);
+
+        ImageView imgB = getView().findViewById(R.id.imgB);
+        imgB.setTag(R.drawable.um2);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 MainFragmentDirections.ActionMainFragmentToFragA action = MainFragmentDirections.actionMainFragmentToFragA();
-                action.setMessage("message has been set");
-                action.setImg((int) img.getTag());
+                int imgId = getDrawableId(imgA);
+                action.setImg(imgId);
                 Navigation.findNavController(v).navigate(action);
             }
         });
@@ -56,15 +65,25 @@ public class MainFragment extends Fragment {
         btnB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_mainFragment_to_fragB);
+                MainFragmentDirections.ActionMainFragmentToFragB action = MainFragmentDirections.actionMainFragmentToFragB();
+                int imgId = getDrawableId(imgB);
+                action.setImg(imgId);
+                action.setMessage("this too");
+                Navigation.findNavController(v).navigate(action);
             }
         });
+
+        ImageView imgC = getView().findViewById(R.id.imgC);
+        imgC.setTag(R.drawable.psu);
 
         Button btnC = getView().findViewById(R.id.btnToFragC);
         btnC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_mainFragment_to_fragC);
+                MainFragmentDirections.ActionMainFragmentToFragC action = MainFragmentDirections.actionMainFragmentToFragC();
+                int imgId = getDrawableId(imgC);
+                action.setImg(imgId);
+                Navigation.findNavController(v).navigate(action);
             }
         });
 

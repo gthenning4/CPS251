@@ -67,12 +67,13 @@ public class FragA extends Fragment {
     }
     @Override public void onStart(){
         super.onStart();
-
-        TextView label = getView().findViewById(R.id.FragALabel);
         FragAArgs args= FragAArgs.fromBundle(getArguments());
-        String msg = args.getMessage();
-        label.setText(msg);
-        label.setText(args.getImg());
+
+        ImageView imageA = getView().findViewById(R.id.imageViewA);
+        imageA.setImageResource(args.getImg());
+
+
+
 
 
     }

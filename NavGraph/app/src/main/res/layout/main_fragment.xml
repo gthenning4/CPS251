@@ -34,11 +34,10 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/starImg"
-                android:layout_width="155dp"
-                android:layout_height="86dp"
-                android:src="@android:drawable/btn_star_big_on"
-                app:srcCompat="@android:drawable/btn_star_big_on" />
+                android:id="@+id/imgA"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/um1" />
 
             <Button
                 android:id="@+id/btnToFragA"
@@ -55,10 +54,10 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="111dp"
-                android:layout_height="87dp"
-                android:src="@android:drawable/presence_audio_online" />
+                android:id="@+id/imgB"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/um2" />
 
             <Button
                 android:id="@+id/btnToFragB"
@@ -75,18 +74,17 @@
             android:baselineAligned="false">
 
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="169dp"
-                android:layout_height="110dp"
-                android:layout_marginTop="20dp"
-                android:src="@android:drawable/ic_lock_lock" />
+                android:id="@+id/imgC"
+                android:layout_width="157dp"
+                android:layout_height="101dp"
+                android:src="@drawable/psu" />
 
             <Button
                 android:id="@+id/btnToFragC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="To Frag C" />
+                android:text="Frag C" />
         </TableRow>
 
     </TableLayout>

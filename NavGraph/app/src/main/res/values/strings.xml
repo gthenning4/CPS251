@@ -2,4 +2,10 @@
     <string name="app_name">NavGraph</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_is_fragment_a">This is Fragment A</string>
+    <string name="image_a_desc">Image A</string>
+    <string name="frag_b_label">Frag B</string>
+    <string name="image_b_desc">Image B</string>
+    <string name="this_is_frag_c">This is Frag C</string>
+    <string name="image_c_desc">Image C</string>
 </resources>
