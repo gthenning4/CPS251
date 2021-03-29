@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Async Project</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="clear_names">Clear Names</string>
+    <string name="add_name">Add Name</string>
+    <string name="itemname">itemName</string>
+    <string name="item_msg">TextView</string>
+</resources>
