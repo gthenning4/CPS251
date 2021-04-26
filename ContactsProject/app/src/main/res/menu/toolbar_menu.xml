@@ -6,28 +6,28 @@
     tools:context=".activity.MainActivity">
     <item
         android:id="@+id/Link3"
-        android:title="Show Names"
+        android:title="Show All Contacts"
+        android:textColor="@color/black"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addName"
+        android:title="Add Contact"
         android:textColor="@color/black"
         app:showAsAction="never" />
     <item
         android:id="@+id/findName"
-        android:title="Find Name"
+        android:title="Find Contact"
         android:textColor="@color/black"
         app:showAsAction="never" />/>
-    <item
-        android:id="@+id/addName"
-        android:title="Add Name"
-        android:textColor="@color/black"
-        app:showAsAction="never" />
 
     <item
         android:id="@+id/Link4"
-        android:title="Sort A-Z"
+        android:title="Sort Contacts A-Z"
         android:textColor="@color/black"
         app:showAsAction="never" />
     <item
         android:id="@+id/Link5"
-        android:title="Sort Z-A"
+        android:title="Sort Contacts Z-A"
         android:textColor="@color/black"
         app:showAsAction="never" />
 </menu>

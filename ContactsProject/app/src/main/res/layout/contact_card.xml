@@ -21,16 +21,19 @@
             android:id="@+id/cardName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
             android:text="TextView"
-            android:textSize="18sp" />
+            android:textSize="32sp" />
 
         <TextView
             android:id="@+id/cardNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="42dp"
             android:text="TextView"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/cardId"

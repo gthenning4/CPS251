@@ -73,10 +73,33 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("name",nameStr);
                 FindName fn = new FindName();
                 fn.setArguments(bundle);
+                if (!nameStr.equals("")){
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container, fn)
+                            .commitNow();
+                }
+                else{
+                    Context context = getApplicationContext();
+                    CharSequence message = "You must enter a value in the add name field.";
+                    int duration = Toast.LENGTH_SHORT;
+                    TextView toastText = new TextView(context);
 
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.container, fn)
-                        .commitNow();
+                    LayoutInflater inflater = getLayoutInflater();
+                    View layout = inflater.inflate(R.layout.toast,
+                            (ViewGroup) findViewById(R.id.toast_layout_root));
+
+                    ImageView image = (ImageView) layout.findViewById(R.id.image);
+                    image.setImageResource(R.drawable.frown);
+                    TextView text = (TextView) layout.findViewById(R.id.text);
+                    text.setText(message);
+                    Toast toast = new Toast(getApplicationContext());
+                    toast.setGravity(Gravity.TOP, 0, 275 );
+                    toast.setDuration(Toast.LENGTH_SHORT);
+                    toast.setView(layout);
+                    toast.show();
+
+                }
+
                 return true;
             case R.id.addName:
 
@@ -109,27 +132,12 @@ public class MainActivity extends AppCompatActivity {
                     image.setImageResource(R.drawable.frown);
                     TextView text = (TextView) layout.findViewById(R.id.text);
                     text.setText(message);
-
                     Toast toast = new Toast(getApplicationContext());
                     toast.setGravity(Gravity.TOP, 0, 275 );
                     toast.setDuration(Toast.LENGTH_SHORT);
                     toast.setView(layout);
                     toast.show();
-//                    text.setTextColor(Color.parseColor("#000000"));
 
-//                    Toast toast = Toast.makeText(context, text, duration);
-//                    toast.setGravity(Gravity.TOP,0,300);
-//                    View toastView = toast.getView();
-//                    toastView.setBackgroundResource(R.drawable.toast_drawable);
-//
-//                    if (null!=toastView) {
-//                        toastView.set
-//                        tv.setCompoundDrawablePadding(context.getResources().getDimensionPixelSize(R.dimen.padding_toast));
-//
-//                    ImageView img = new ImageView(context);
-//                    img.setImageResource(R.drawable.frown);
-//                    toast.setView(img);
-//                    toast.show();
                 }
 
                 return true;
