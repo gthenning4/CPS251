@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/Link3"
+        android:title="Show Names"
+        android:textColor="@color/black"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/findName"
+        android:title="Find Name"
+        android:textColor="@color/black"
+        app:showAsAction="never" />/>
+    <item
+        android:id="@+id/addName"
+        android:title="Add Name"
+        android:textColor="@color/black"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Link4"
+        android:title="Sort A-Z"
+        android:textColor="@color/black"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Link5"
+        android:title="Sort Z-A"
+        android:textColor="@color/black"
+        app:showAsAction="never" />
+</menu>

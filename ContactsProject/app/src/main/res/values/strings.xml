@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Contacts Project</string>
+    <string name="contact_id">Contact Id</string>
+    <string name="not_assigned">Not Assigned</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_phone_number">Contact Phone Number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
